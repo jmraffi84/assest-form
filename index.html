@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div class="form mt-5">
+  <h1 class="text-center">Fill Out Fields</h1>
+  <hr>
+    <form action="#">
+        <div class="box">
+          <!-- name -->
+            <label for="Fname">First Name</label>
+            <input type="text" placeholder="Name">
+            <!-- Email  -->
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder="LastName">
+            <!-- Address Line1 -->
+            <label for="address-1">Flat No</label>
+            <input type="text" placeholder="FlatNo">
+            <!-- PinCode -->
+            <label for="pincode">Pin Code</label>
+            <input type="number" placeholder="PinCode" maxlength="6">
+            <!-- Gender -->
+            <label for="gender">Gender</label><br>  <br>
+           
+                <label for="male">Male</label>
+                <input for="male" onclick="gen(this)" type="radio"  value="false">
+                
+                <label for="female">Female</label>
+                <input for="female" onclick="gen(this)" type="radio"  value="false">
+        
+            <!-- Choice of Food any 2 -->
+            <br>
+            <br>
+          <label  for="food">Choose Any 2
+          <span><p class="msg1">please add 2</p></span>
+          <span><p class="msg2">More Than 2 Not allowed</p></span>
+        </label>
+          <br>
+          <!-- <div class="parent  mt-5"> -->
+            
+          
+            <!-- </div> -->
+       
+          <label for="food1">Food 1</label>
+          <input for="food1" type ="checkbox" onclick="check(this)" value="false">
+
+          <label for="food2">Food 2</label>
+          <input for="food2" type ="checkbox" onclick="check(this)" value="false">
+
+          <label for="food3">Food 3</label>
+          <input for="food3" type ="checkbox" onclick="check(this)" value="false">
+
+          <label for="food4">Food 4</label>
+          <input for="food4" type ="checkbox" onclick="check(this)" value="false">
+
+          <label for="food5">Food 5</label>
+          <input for="food5" type ="checkbox" onclick="check(this)" value="false">
+         <br>
+            <!-- State  -->
+            <label for="state">State</label>
+            <input type="text" placeholder="State">
+
+            <!-- Country -->
+            <label for="country">Country</label>
+            <input type="text" placeholder="Country">
+            <div class="parent">
+              <span>
+                <p ></p>
+              </span>
+            </div>
+       
+            <!-- button -->
+            <button type="submit" class="btn-center">Sumbit</button>
+        </div>
+    </form>
+
+</div>
+<br>
+<div class="table_cont">
+   <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Pincode</th>
+        <th>Gender</th>
+        <th>Food</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td> -->
+      </tr>
+    </tbody>
+   </table>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
